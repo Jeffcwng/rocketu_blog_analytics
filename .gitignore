@@ -56,3 +56,9 @@ target/
 local_settings.py
 .idea
 .DS_Store
+
+gunicorn.conf.py
+gunicorn.conf.py~
+gunicorn.pid
+local_settings.py~
+rocketu_blog_analytics/gunicorn.conf.py
