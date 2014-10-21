@@ -1,9 +1,12 @@
 {% extends 'base.html' %}
 
+{#  {{ tag.name }} for the title header  #}
+
+
 {% block main %}
     <div class="row">
         <div class="col-lg-12">
-            <h1>Check out our posts!</h1>
+            <h1>Check out our posts {% if tag %} about {{ tag.name }}{% endif %}} ! </h1>
         </div>
     </div>
 
