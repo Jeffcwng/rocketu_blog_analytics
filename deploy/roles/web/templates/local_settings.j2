@@ -13,5 +13,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
-DEBUG = False
-ALLOWED_HOSTS = ['{{ nginx_server_name }}']
+#DEBUG = False
+#ALLOWED_HOSTS = ['{{ nginx_server_name }}']
+
+# Set your DSN value
+RAVEN_CONFIG = {
+    'dsn': 'https://90fd0cfaec764398b2377a58c147cf0b:1dcb96798f204120bedc2bace7812996@app.getsentry.com/32044',
+}
